@@ -17,13 +17,28 @@
                 <div class="border border-light border-2 rounded-3 p-5 shadow-lg">
                     <form action="dashboard.html" class="needs-validation" novalidate>
                         <h1 class="text-center">會員管理系統</h1>
+                        <!-- 會員等級 Start -->
+                        <label for="" class="form-check-label d-block">會員等級</label>
+                        <!-- 普通會員 -->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="" id="normal" name="rank" checked>
+                            <label class="form-check-label" for="normal">一般會員</label>
+                        </div>
+                        <!-- VIP -->
+                        <div class="form-check form-check-inline"> <!--form-check-inline 將核取方塊或選項按鈕組合放到同一水平行上-->
+                            <input class="form-check-input form-check-inline" type="radio" value="" id="vip"
+                                name="rank">
+                            <label class="form-check-label" for="vip">高級會員</label>
+                        </div>
+                        <!-- 會員等級 End -->
+
                         <!-- Account Start -->
                         <div class="mb-3">
                             <label for="account" class="form-label">帳號:</label>
                             <input type="text" id="account" name="account" class="form-control" required
                                 placeholder="請輸入帳號">
                             <div class="invalid-feedback">
-                                此欄位為必填!
+                                請輸入帳號!
                             </div>
                         </div>
                         <!-- Account End -->
@@ -34,7 +49,7 @@
                             <input type="text" id="names" name="names" class="form-control" required
                                 placeholder="請輸入姓名">
                             <div class="invalid-feedback">
-                                此欄位為必填!
+                                請輸入姓名!
                             </div>
                         </div>
                         <!-- Name End -->
@@ -86,14 +101,26 @@
                         <!-- Job Start -->
                         <div class="mb-3">
                             <label for="job" class="form-label">職業:</label>
-                            <select class="form-select" aria-label="Default select example" id="job" name="job">
-                                <option selected>Open this select menu</option>
+                            <select class="form-select" aria-label="Default select example" id="job" name="job"
+                                required>
+                                <option selected value=""> --- 請選擇 --- </option>
                                 <option value="1">軍</option>
                                 <option value="2">公</option>
                                 <option value="3">教</option>
                             </select>
+                            <div class="invalid-feedback">
+                                請選擇職業!
+                            </div>
                         </div>
                         <!-- Job End -->
+
+
+                        <!-- Commen Start -->
+                        <div class="mb-3">
+                            <label for="commen" class="form-label">備註:</label>
+                            <textarea class="form-control" name="commen" id="commen" cols="30" rows="5"></textarea>
+                        </div>
+                        <!-- Commen End -->
 
 
                         <!-- Login Start -->
