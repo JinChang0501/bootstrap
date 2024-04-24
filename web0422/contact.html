@@ -82,7 +82,7 @@
         </nav>
         <!-- navbar end -->
         <!-- bread -->
-        <div class="container bg-primary">
+        <div class="container">
             <div class="row">
                 <div class="col-12 mt-5 pt-5">
 
@@ -104,10 +104,53 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 mx-auto">
-                    <h2 class="text-center mb-5">常見問題</h2>
+                    <h2 class="mb-3">聯絡我們</h2>
                 </div>
             </div>
         </div>
+        <!--  -->
+        <!-- .container>.row>.col-12.col-md-6>label+input*8 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 mx-auto">
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="row col-6 mb-4">
+                            <div class="col-3"><label for="">聯絡目的</label></div>
+                            <div class="col-6"><input type="text" class="form-control"></div>
+                        </div>
+
+                        <div class="row col-6 mb-4">
+                            <div class="col-3"><label for="">姓名</label></div>
+                            <div class="col-6"><input type="text" class="form-control"></div>
+                        </div>
+
+                        <div class="row col-6 mb-4">
+                            <div class="col-3"><label for="">連絡電話</label></div>
+                            <div class="col-6"><input type="text" pattern="[0]{1}[9]{1}[0-9]{8}" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row col-6 mb-4">
+                            <div class="col-3"><label for="">Email</label></div>
+                            <div class="col-6"><input type="text" class="form-control"></div>
+                        </div>
+
+                        <div class="row col-6 mb-4">
+                            <div class="col-3"><label for="">姓名</label></div>
+                            <div class="col-6"><input type="text" class="form-control"></div>
+                        </div>
+                        <div class="col-12 mt-5 text-end">
+                            <button class="btn btn-primary px-5 " type="submit">送出訊息</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- button -->
         <a href="javascript:;"
             class="position-fixed end-0 bottom-50 bg-secondary text-white p-4 text-decoration-none rounded-start">線上購票</a>
