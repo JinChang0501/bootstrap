@@ -99,8 +99,6 @@
 
 
         <!-- section 1 start -->
-
-
         <div class="container">
             <div class="row">
                 <div class="col-12 mx-auto">
@@ -111,77 +109,108 @@
         <!--  -->
         <!-- .container>.row>.col-12.col-md-6>label+input*8 -->
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8 mx-auto">
-                    <form action="" class="needs-validation" novalidate>
-                        <div class="row col-6 mb-4">
-                            <div class="col-3 my-auto"><label for="">聯絡目的</label></div>
-                            <div class="col-6">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>客服專區</option>
-                                    <option value="1">加盟專區</option>
-                                    <option value="2">海外代理</option>
-                                    <option value="3">異業合作</option>
-                                    <option value="4">企業採購</option>
-                                    <option value="5">聯名商品</option>
-                                </select>
-                            </div>
+            <div class="row mx-5">
+                <form class="ms-5 mt-4">
+                    <div class="row mb-4">
+                        <label for="" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">聯絡目的</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="">客服專區</option>
+                                <option value="1">加盟專區</option>
+                                <option value="2">海外代理</option>
+                                <option value="3">異業合作</option>
+                                <option value="4">企業採購</option>
+                                <option value="5">聯名商品</option>
+                            </select>
                         </div>
 
-                        <div class="row col-6 mb-4">
-                            <div class="col-3 my-auto"><label for="">姓名</label></div>
-                            <div class="col-6"><input type="text" class="form-control"></div>
-                        </div>
+                    </div>
 
-                        <div class="row col-6 mb-4">
-                            <div class="col-3 my-auto"><label for="">連絡電話</label></div>
-                            <div class="col-6"><input type="text" pattern="[0]{1}[9]{1}[0-9]{8}" class="form-control">
-                            </div>
+                    <div class="row mb-4">
+                        <label for="name" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">姓名</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="請輸入姓名">
                         </div>
+                    </div>
 
-                        <div class="row col-6 mb-4">
-                            <div class="col-3 my-auto"><label for="">Email</label></div>
-                            <div class="col-6"><input type="text" class="form-control"></div>
+                    <div class="row mb-4">
+                        <label for="mobile" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">連絡電話</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="請輸入連絡電話"
+                                pattern="[0]{1}[9]{1}[0-9]{8}">
                         </div>
+                    </div>
 
-                        <div class="row col-6 mb-4">
-                            <div class="col-3 my-auto"><label for="">消費門市</label></div>
-                            <div class="col-6">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>消費門市</option>
-                                    <option value="1">台北和平店</option>
-                                    <option value="2">竹東長春店</option>
-                                    <option value="3">青埔新生店</option>
-                                    <option value="4">小港漢民店</option>
-                                    <option value="5">高雄五甲店</option>
-                                    <option value="6">台東鐵花村</option>
-                                    <option value="7">忠孝新生店</option>
-                                    <option value="8">臺北南陽店</option>
-                                    <option value="9">學成北大店</option>
-                                    <option value="10">新光A8店B2</option>
-                                    <option value="11">八德介壽店</option>
-                                    <option value="12">中壢建工店</option>
-                                    <option value="13">台北承德店</option>
-                                    <option value="14">大直植福店</option>
-                                    <option value="15">台北行天宮</option>
-                                </select>
-                            </div>
+                    <div class="row mb-4">
+                        <label for="email" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">Email</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <input type="email" class="form-control" id="email" placeholder="請輸入Email">
                         </div>
-                        <div class="col-12 mt-5 text-end">
-                            <button class="btn btn-primary px-5 " type="submit">送出訊息</button>
+                    </div>
+
+                    <div class="row mb-4">
+                        <label for="store" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">消費門市</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <select class="form-select" aria-label="Default select example" name="store" id="store">
+                                <option selected>消費門市</option>
+                                <option value="1">台北和平店</option>
+                                <option value="2">竹東長春店</option>
+                                <option value="3">青埔新生店</option>
+                                <option value="4">小港漢民店</option>
+                                <option value="5">高雄五甲店</option>
+                                <option value="6">台東鐵花村</option>
+                                <option value="7">忠孝新生店</option>
+                                <option value="8">臺北南陽店</option>
+                                <option value="9">學成北大店</option>
+                                <option value="10">新光A8店B2</option>
+                                <option value="11">八德介壽店</option>
+                                <option value="12">中壢建工店</option>
+                                <option value="13">台北承德店</option>
+                                <option value="14">大直植福店</option>
+                                <option value="15">台北行天宮</option>
+                            </select>
                         </div>
-                    </form>
+                    </div>
+                    <div class="row mb-4">
+                        <label for="time" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">消費時間</label>
+                        <div class="col-12 col-md-8">
+                            <input type="email" class="form-control" id="time" name="time" placeholder="請輸入消費時間">
+                        </div>
+                    </div>
 
+                    <div class="row mb-4">
+                        <label for="title" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">主旨</label>
+                        <div class="col-12 col-md-8">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="請輸入主旨">
+                        </div>
+                    </div>
 
-                </div>
+                    <div class="row mb-4">
+                        <label for="" class="form-label col-12 col-md-2 mt-0 mb-3 mb-md-2">內容</label>
+                        <div class="col-12 col-md-8">
+                            <textarea name="content" id="content" rows="10" style="resize: none;"
+                                class="col-12 col-md-12 form-control" placeholder="請輸入內容"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <label for="code" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">驗證碼</label>
+                        <div class="col-4 col-lg-2">
+                            <input type="text" class="form-control" id="code" name="code" maxlength="4"
+                                placeholder="請輸入驗證碼">
+                        </div>
+                    </div>
             </div>
+            <div class="col-12 mt-5 text-end mb-5">
+                <button class="btn btn-primary px-5 " type="submit">送出訊息</button>
+            </div>
+
+            </form>
+
         </div>
-
-
-
         <!-- button -->
-        <a href="javascript:;"
-            class="position-fixed end-0 bottom-50 bg-secondary text-white p-4 text-decoration-none rounded-start">線上購票</a>
+        <!-- <a href="javascript:;"
+            class="position-fixed end-0 bottom-50 bg-secondary text-white p-4 text-decoration-none rounded-start">線上購票</a> -->
         <a href="#"
             class="position-fixed end-0 bottom-0 bg-dark text-white p-3 text-decoration-none d-flex flex-column align-items-center rounded-pill"><i
                 class="bi bi-arrow-up fs-5 "></i>top
@@ -201,7 +230,7 @@
                             <!-- Account Start -->
                             <div class="mb-3">
                                 <label for="account" class="form-label">帳號:</label>
-                                <input type="text" id="account" name="account" class="form-control" required>
+                                <input type="text" id="account" name="account" class="form-control">
                                 <div class="invalid-feedback">
                                     此欄位為必填!
                                 </div>
@@ -211,7 +240,7 @@
                             <!-- Password Start -->
                             <div class="mb-3">
                                 <label for="password" class="form-label">密碼:</label>
-                                <input type="password" id="password" name="password" class="form-control" required>
+                                <input type="password" id="password" name="password" class="form-control">
                                 <div class="invalid-feedback">
                                     此欄位為必填!
                                 </div>
@@ -273,6 +302,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <!-- 驗證 -->
     <script src="./js/validation.js"></script>
 </body>
 
