@@ -7,5 +7,10 @@
       "savePathReplacementPairs": null
     }
   ],
-  "compile-hero.disable-compile-files-on-did-save-code": true
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#083e75",
+    "titleBar.activeBackground": "#3a529b",
+    "titleBar.activeForeground": "#FCFCFC"
+  }
 }
