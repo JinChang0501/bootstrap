@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1365px) {
+  .container {
+    width: 95%;
+    /* 可以根据需要修改其他属性 */
+  }
+}
